@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datagov-ie",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "data.gov.ie MCP — Ireland's national open-data portal (CKAN API).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-30e0b66894e229f4d1c2d790f9de158618a89f780e6b6d43349851693d428d1f",
-    "sourceCommit": "8355bf3d1eece256a62a89dba2278e7a77bebe07"
+    "sourceHash": "v1-2d7b35e5cc489c87bb92d8f266893ce44f9f68928f05945b8e1a0873c097d429",
+    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
   }
 }
