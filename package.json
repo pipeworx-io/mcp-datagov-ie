@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datagov-ie",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "data.gov.ie MCP — Ireland's national open-data portal (CKAN API).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datagov-ie": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datagov-ie"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datagov-ie.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datagov-ie",
   "pipeworx": {
-    "sourceHash": "v1-2d7b35e5cc489c87bb92d8f266893ce44f9f68928f05945b8e1a0873c097d429",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datagov-ie",
+    "gatewaySlug": "datagov-ie",
+    "sourceHash": "v1-80ca42869515999e4056bc557e28f73c0dcccbcbe5cf5bdffb4722c41df22f0d",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
